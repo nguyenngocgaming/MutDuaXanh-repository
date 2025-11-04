@@ -8,25 +8,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <style>
-        /* Sử dụng font Inter cho toàn bộ trang */
-        body {
-            font-family: 'Be Vietnam Pro', sans-serif;
-        }
+    /* Thêm font Be Vietnam Pro từ Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
 
-        /* Thêm font Inter từ Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
-
-        /* Hiệu ứng mượt mà cho anchor link */
-        html {
-            scroll-behavior: smooth;
-        }
+    /* Sử dụng font Be Vietnam Pro cho toàn bộ trang */
+    body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 500; /* Đã thay đổi trọng lượng mặc định thành Medium */
         
-        /* Đổi màu chủ đạo Tailwind CSS: Xanh lá cây tươi */
-        .text-primary { color: #059669; }
-        .bg-primary { background-color: #059669; }
-        .hover\:bg-primary-dark:hover { background-color: #047857; }
-        .hover\:text-primary:hover { color: #059669; }
-    </style>
+        /* Bổ sung để tối ưu hiển thị font trên các hệ điều hành */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Hiệu ứng mượt mà cho anchor link */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Đổi màu chủ đạo Tailwind CSS: Xanh lá cây tươi */
+    .text-primary { color: #059669; }
+    .bg-primary { background-color: #059669; }
+    .hover\:bg-primary-dark:hover { background-color: #047857; }
+    .hover\:text-primary:hover { color: #059669; }
+</style>
 </head>
 
 <body class="bg-green-50">
@@ -326,5 +331,6 @@
 
 
 </html>
+
 
 
